@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Herbalife</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+            <div class="container">
+                <a class='navbar-brand logo' href='index.html'>
+                        <h1 style="color: green; font-size: 1.8rem;">Herbalife</h1>
+                    </a>
+
+
+                        <li class="nav-item">
+                            <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="urunler.html" class="nav-link">Ürünlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="home-bg section h-100vh" id="home">
+            <div class="bg-overlay"></div>
+                <div class="container z-index">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="text-white text-center">
+                                <h4>Hoşgeldiniz</h4>
+                                <h1 class="header_title mb-0 mt-3">Ürünlerimiz <span class="element fw-bold" style="color:green" data-elements="Besleyici Shake Karışımı,İçecek Tozu​,Konsantre İçecek​,Öğün Yerine Geçen Çorba​,Bitki Ekstreli Aromalı İçecek Tozu"></span></h1>
+                                <ul class="social_home list-unstyled text-center pt-4">
+                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-gmail"></i></a></li>
+                                </ul>
+                                <div class="header_btn">
+                                    <a href="urunler.html" class="btn btn-outline-custom btn-rounded mt-4">Ürünlerimiz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+        </section>
+
+
+
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/typed.js"></script>         
+        <script>
+            $(".element").each(function() {
+                var $this = $(this);
+                $this.typed({
+                    strings: $this.attr('data-elements').split(','),
+                    typeSpeed: 100,
+                    backDelay: 3000
+                });
+            });
+        </script>
+    </body>
+</html>
